@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajaman08</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6bd2c4485c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="preloader"></div>
+    <div id="header">
+        <div class="container">
+            <nav id="navbar">
+                <img src="image/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <span class="auto"></span>
+                <h1>Hi I'm Aman <span>Raj</span><br></h1>
+                <h3>From India</h3>
+            </div>
+    </div>
+    </div>
+    <!--------------------------------------------------about---------------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/user.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Hello, I'm Aman Raj living in Bangalore and pursuing Computer Science Engineering in Nitte Meenakshi Institue of Technology. <br>
+                        I'm a <span>Front-End Developer</span> passionate about intaractive applications and experiences on the Web.
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Web Developer</span><br>Web app Development.
+                            </li>
+                            <li>
+                                <span>JAVA</span><br>Application Development.
+                            </li>
+                            <li>
+                                <span>Database</span><br>Database Management.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>2017</span><br>10th From International School, Patna.
+                            </li>
+                            <li>
+                                <span>2019</span><br>12th From Loyola High School, Patna.
+                            </li>
+                            <li>
+                                <span>2021-</span><br>B.E Computer Science From NMIT, Bangalore.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------------------services--------------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I'm a front-end developer, I creates website and application using web languages such as HTML, CSS, and JavaScript that allow users to access and interact with the site or app.</p>
+                    <a href="#"><i class="fa-solid fa-location-arrow"></i></a>Learn More..
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>App Developer</h2>
+                    <p>I have a good knowledge of java to make any application using javafx .Use Java to construct applications in laptops, data centres, game consoles, scientific supercomputers, cell phones, and other devices.</p>
+                    <a href="https://github.com/AmanRaj08/Hospital-registration"><i class="fa-solid fa-location-arrow"></i></a>Learn More..
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database Management</h2>
+                    <p>I have learn Mysql and Mongo DB for database management.</p>
+                    <a href="#"><i class="fa-solid fa-location-arrow"></i></a>Learn More..
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------------------project----------------------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+               <div class="work">
+                <p>Click <i class="fa-solid fa-link"></i> to Learn More...</p>
+                <img src="image/work1.jpg">
+                <div class="layer">
+                    <h3>Website</h3>
+                    <p>I made my own website and a tour-travel website using HTML, CSS, JAVASCRIPT, BOOTSTRAP,etc.</p>
+                    <a href="https://amanraj08.github.io/tour-website/"><i class="fa-solid fa-link"></i></a>
+                </div>
+               </div>
+               <div class="work">
+                <p>Click <i class="fa-solid fa-link"></i> to Learn More...</p>
+                <img src="image/work2.png">
+                <div class="layer">
+                    <h3>Hospital Registration</h3>
+                    <p>I made a project on java using javafx and Mysql database for hospital registration application.</p>
+                    <a href="https://github.com/AmanRaj08/Hospital-registration"><i class="fa-solid fa-link"></i></a>
+                </div>
+               </div>
+               
+               <div class="work">
+                <p>Click <i class="fa-solid fa-link"></i> to Learn More...</p>
+                <img src="image/work3.jpg">
+                <div class="layer">
+                    <h3>Mysql</h3>
+                    <p>I have A good knowledge of Mysql and Mongo DB.</p>
+                    <a href="#header"><i class="fa-solid fa-link"></i></a>
+                </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------------------contact----------------------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>amanraj08072001@gmail.com</p> 
+                    <p><i class="fa-solid fa-phone"></i>7061144522</p>
+                    <div class="social-icon">
+                        <div class="linkedin">
+                        <a href="https://www.linkedin.com/in/aman-raj-649572221/"><i class="fa-brands fa-linkedin-in"></i></a>
+                       </div>
+                       <div class="insta">
+                        <a href="https://www.instagram.com/amanraj_08/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div class="git">
+                        <a href="https://github.com/AmanRaj08"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <div class="tweet">
+                        <a href="https://twitter.com/Rajaman_0807"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <div class="snap">
+                        <a href="tel:7061144522"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    </div>
+                    <a href="CV.pdf" class="btn">Download CV</a>
+                    
+                </div>
+                
+                <div class="contact-right">
+                 <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                 </form>
+                 <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Aman. Made with <i class="fa-solid fa-heart"></i> By Aman Raj</p>
+        </div>
+    </div>
+    <script src="port.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto",{
+           strings:["Web Developer","Application Designer"],
+           typeSpeed: 50,
+           backSpeed:70,
+           loop:true 
+        })
+    </script>
+</body>
+</html>
