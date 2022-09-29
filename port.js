@@ -50,3 +50,28 @@ var loader= document.getElementById("preloader");
 window.addEventListener("load", function(){
   loader.style.display= "none";
 })
+const observer= new IntersectionObserver((entries)=>{
+  entries.forEach((entry)=>{
+    console.log(entry)
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    }else{
+      entry.target.classList.remove('show');
+    }
+  });
+});
+const hiddenElements=document.querySelectorAll('.hidden');
+hiddenElements.forEach((el)=> observer.observe(el));
+
+const observer1= new IntersectionObserver((entries1)=>{
+  entries1.forEach((entry1)=>{
+    console.log(entry1)
+    if(entry1.isIntersecting){
+      entry1.target.classList.add('show1');
+    }else{
+      entry1.target.classList.remove('show1');
+    }
+  });
+});
+const hiddenElements1=document.querySelectorAll('.hidden1');
+hiddenElements1.forEach((el)=> observer1.observe(el));
