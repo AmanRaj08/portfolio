@@ -28,8 +28,9 @@
             <section class="hidden">
             <div class="header-text">
                 <span class="auto"></span>
-                <h1>Hi I'm Aman <span>Raj</span><br></h1>
-                <h3>From India</h3>
+                <h1>Hi I'm Aman <span>Raj</span><br></h1><br>
+                <h3></h3>
+                <span class="quote"></span>
             </div>
     </div>
     </div>
@@ -45,7 +46,7 @@
                 <div class="about-col-2">
                     <h1 class="subtitle">About Me</h1>
                     <p>Hello, I'm Aman Raj living in Bangalore and pursuing Computer Science Engineering in Nitte Meenakshi Institue of Technology. <br>
-                        I'm a <span>Front-End Developer</span> passionate about intaractive applications and experiences on the Web.
+                        I'm a <span>Front-End Developer, Competitive Coder</span> passionate about intaractive applications and experiences on the Web.
                     </p>
                     <div class="tab-title">
                         <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
@@ -200,9 +201,13 @@
     <script>
         var typed = new Typed(".auto",{
            strings:["Web Developer","Application Designer","Software Developer"],
-           typeSpeed: 70,
-           backSpeed:70,
+           typeSpeed: 60,
+           backSpeed:50,
            loop:true 
+        })
+        var typed1 = new Typed(".quote",{
+           strings:["~The best way you can predict the future is to create it~"],
+           typeSpeed: 25
         })
     </script>
 </body>
