@@ -489,3 +489,13 @@ nav .fa-solid{
     opacity: 1;
     filter: blur(0);
 }
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(46, 46, 46); 
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6a6a6a; 
+  }
